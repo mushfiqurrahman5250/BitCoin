@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slick carousel css -->
+    <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+    <!-- css stylesheet -->
+    <link href="/public/css/style.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Nunito:wght@200;300;400&family=Poppins:wght@100;300;400;500;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>BitcoinInfo</title>
+</head>
+
+<body class="font-poppins overflow-x-hidden w-full h-screen bf-no-repeat bg-cover" style="background-image:url('./images/cover1.jpg') ;">
+    <nav class="bg-[#dc5f05] shadow p-3 pb-2 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="justify-center items-center text-center">
+                <h2 class="text-zinc-50 text-2xl animate-bounce">
+                    BitcoinInfo
+                </h2>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class=" w-5/12 justify-center items-center text-center ml-96   pt-1 mt-2 text-black font-medium border rounded-md bg-blue-300 bg-opacity-50  p-2 hover:bg-red-600 hover:text-white  ">
+            <h1 class="center transform transition-all hover:scale-125 ">Bitcoin Rate</h1>
+        </div>
+        <div class="container main-content">
+
+            <div class=" container   mx-auto mt-10 p-10 ml-10  bg-slate-400 bg-opacity-30">
+                <div class="  text-lg font-semibold text-yellow-400 ">
+                    <div class="flex justify-center items-center gap-40">
+                        <p class="mr-8 pr-16 pt-4 ">Enter Amount</p>
+                        <p class="pr-16 pt-4">From</p>
+                        <p class="pr-4 pt-4">To</p>
+                    </div>
+                </div>
+
+                <form action="" class="convert justify-center items-center text-center" id="currency-form">
+                    <div class="flex gap-40 pr-6 ">
+                        <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="number" name="" placeholder="Enter Amount" step=".0001" id="input-amount">
+                        <select class="rounded-md text-fuchsia-800" name="currency-from" id="currency-from">
+              <option value="BTC">Bitcoin</option>
+            </select>
+                        <select class="rounded-md text-fuchsia-800" name="currency-to" id="currency-to">
+              <option value="USD">US Dollar</option>
+              <option value="EUR">Euro</option>
+              <option value="GBR">Pound</option>
+            </select>
+                    </div>
+                    <div class="convert-btn justify-center items-center ml-28 mr-14 ">
+                        <input class="w-72 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="Convert" id="convert-btn">
+                    </div>
+                    <div class="display-result text-black font-bold text-2xl  border rounded-md p-3 m-2 w-5/12 ml-96 bg-orange-600 hover:bg-red-600 hover:text-white ">
+                    </div>
+                </form>
+
+
+
+
+            </div>
+    </section>
+    <section>
+
+        <div class="w-5/12 justify-center items-center text-center ml-96   pt-1 text-black font-medium border rounded-md bg-blue-300 bg-opacity-50 mt-5 p-2 hover:bg-red-600 hover:text-white">
+            <h3 class="transform transition-all hover:rotate-45">lowest Bitcoin rate </h3>
+        </div>
+        <!-- lowest Bitcoin rate -->
+        <div class="container   mx-auto mt-10 p-10 ml-10  bg-slate-400 bg-opacity-30">
+
+
+            <form action="" class="convert justify-center items-center text-center" id="lowest-Bitcoin-rate-form">
+                <div class="flex justify-center items-center gap-72">
+                    <div class="  text-center ml-20 p-2 m-2">
+                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50 ">From
+                            <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50">To
+                            <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+                <div class="flex justify-center items-center gap-50">
+                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="fromDate">
+                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="toDate">
+                </div>
+                <div class="convert-btn justify-center items-center ml-48 mr-14 ">
+                    <input class="w-72 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mr-20 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="lowest Bitcoin rate" id="btn-lowest-Bitcoin-rate">
+                </div>
+
+                <div class="display-lowest-Bitcoin-rate text-black font-bold text-2xl  border rounded-md p-3 m-2 w-5/12 ml-96 bg-orange-600 hover:bg-red-600 hover:text-white ">
+                </div>
+            </form>
+        </div>
+        <!-- highest Bitcoin rate -->
+        <div class="w-5/12 justify-center items-center text-center ml-96   pt-5  text-black font-medium border rounded-md bg-blue-300 bg-opacity-50 mt-5 p-2 hover:bg-red-600 hover:text-white">
+            <h3 class="transform transition-all hover:rotate-45">Highest Bitcoin rate </h3>
+            <i class="fa-solid fa-arrow-down animate-ping"></i>
+        </div>
+        <div class="container   mx-auto mt-10 p-10 ml-10  bg-slate-400 bg-opacity-30">
+
+            <form action="" class="convert justify-center items-center text-center" id="highest-Bitcoin-rate-form">
+                <div class="flex justify-center items-center gap-96">
+                    <div class="  text-center ml-20 p-2 m-2">
+                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50 ">From
+                            <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50">To
+                            <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-40">
+                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="fromDate">
+                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="toDate">
+                </div>
+                <div class="convert-btn justify-center items-center ml-48 mr-14 ">
+                    <input class="w-72 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mr-20 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="highest Bitcoin rate" id="btn-highest-Bitcoin-rate">
+                </div>
+
+                <div class="display-highest-Bitcoin-rate text-black font-bold text-2xl  border rounded-md p-3  m-2 w-5/12 ml-96 bg-orange-600 hover:bg-red-600 hover:text-white">
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- slick carousel js -->
+    <script src="./vendors/slick/slick.min.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
