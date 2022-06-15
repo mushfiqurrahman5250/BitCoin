@@ -30,23 +30,23 @@
         </div>
     </nav>
     <section>
-        <div class=" w-5/12 justify-center items-center text-center ml-96   pt-1 mt-2 text-black font-medium border rounded-md bg-blue-300 bg-opacity-50  p-2 hover:bg-red-600 hover:text-white  ">
+        <div class="md:w-5/12 sm:w-30 sm:mr-20  justify-center items-center text-center md:ml-96   pt-1 mt-2 text-black font-medium border rounded-md bg-blue-300 bg-opacity-50  p-2 hover:bg-red-600 hover:text-white  ">
             <h1 class="center transform transition-all hover:scale-125 ">Bitcoin Rate</h1>
         </div>
         <div class="container main-content">
 
-            <div class=" container   mx-auto mt-10 p-10 ml-10  bg-slate-400 bg-opacity-30">
-                <div class="  text-lg font-semibold text-yellow-400 ">
-                    <div class="flex justify-center items-center gap-40">
-                        <p class="mr-8 pr-16 pt-4 ">Enter Amount</p>
-                        <p class="pr-16 pt-4">From</p>
-                        <p class="pr-4 pt-4">To</p>
+            <div class=" container sm:mx-auto  md: mx-auto mt-10 sm:p-2 sm:ml-5   md:p-10 md:ml-10  bg-slate-400 bg-opacity-30">
+                <div class=" md:text-lg sm:text-sm font-semibold text-yellow-400 ">
+                    <div class="flex justify-center items-center md:gap-40 sm:gap-4">
+                        <p class="md:mr-8 sm:mr-2 md:pr-16 sm:pr-1 sm:m-5 pt-4 ">Enter Amount</p>
+                        <p class="md:pr-16 sm:pr-1 pt-4">From</p>
+                        <p class="md:pr-4 sm:pr-1 pt-4">To</p>
                     </div>
                 </div>
 
-                <form action="" class="convert justify-center items-center text-center" id="currency-form">
-                    <div class="flex gap-40 pr-6 ">
-                        <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="number" name="" placeholder="Enter Amount" step=".0001" id="input-amount">
+                <form action="" class="convert md:justify-center sm:justify-start md:items-center sm:items-start md:text-center sm:text-right" id="currency-form">
+                    <div class="flex sm: md:gap-40 sm:gap-20 md:pr-6 sm:1 ">
+                        <input class="md:ml-64 sm:ml-2 sm:m-5 rounded-md placeholder:text-fuchsia-800 " type="number" name="" placeholder="Enter Amount" step=".0001" id="input-amount">
                         <select class="rounded-md text-fuchsia-800" name="currency-from" id="currency-from">
               <option value="BTC">Bitcoin</option>
             </select>
@@ -57,9 +57,9 @@
             </select>
                     </div>
                     <div class="convert-btn justify-center items-center ml-28 mr-14 ">
-                        <input class="w-72 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="Convert" id="convert-btn">
+                        <input class="md:w-72 sm:w-56 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mt-5 md:p-2 sm:p-3  hover:text-white text-lg hover:bg-red-600" type="submit" value="Convert" id="convert-btn">
                     </div>
-                    <div class="display-result text-black font-bold text-2xl  border rounded-md p-3 m-2 w-5/12 ml-96 bg-orange-600 hover:bg-red-600 hover:text-white ">
+                    <div class="display-result text-black md:font-bold sm:font-medium md:text-2xl sm:text-sm  border rounded-md p-3  m-2 w-5/12  md:ml-96 sm:ml-44 bg-orange-600 hover:bg-red-600 hover:text-white ">
                     </div>
                 </form>
 
@@ -70,23 +70,23 @@
     </section>
     <section>
 
-        <div class="w-5/12 justify-center items-center text-center ml-96   pt-1 text-black font-medium border rounded-md bg-blue-300 bg-opacity-50 mt-5 p-2 hover:bg-red-600 hover:text-white">
+        <div class="w-5/12 justify-center items-center text-center md:ml-96 sm:ml-10   pt-1 text-black font-medium border rounded-md bg-blue-300 bg-opacity-50 mt-5 p-2 hover:bg-red-600 hover:text-white">
             <h3 class="transform transition-all hover:rotate-45">lowest Bitcoin rate </h3>
         </div>
         <!-- lowest Bitcoin rate -->
-        <div class="container   mx-auto mt-10 p-10 ml-10  bg-slate-400 bg-opacity-30">
+        <div class="container   mx-auto md:mt-10 sm:mt-4 md:p-10 sm:p-6 md:ml-10 sm:ml-2  bg-slate-400 bg-opacity-30">
 
 
             <form action="" class="convert justify-center items-center text-center" id="lowest-Bitcoin-rate-form">
                 <div class="flex justify-center items-center gap-72">
-                    <div class="  text-center ml-20 p-2 m-2">
-                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50 ">From
+                    <div class="  text-center md:ml-20 sm:ml-10 p-2 md:m-2 sm:m-0">
+                        <p class="md:mr-20 sm:mr-4 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50 ">From
                             <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
                         </p>
 
                     </div>
                     <div>
-                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50">To
+                        <p class="md:mr-20 sm:mr-4 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50">To
                             <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
                         </p>
 
@@ -96,48 +96,48 @@
 
                 </div>
                 <div class="flex justify-center items-center gap-50">
-                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="fromDate">
-                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="toDate">
+                    <input class="md:ml-64 sm:ml-32  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="fromDate">
+                    <input class="ml-64   rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="toDate">
                 </div>
-                <div class="convert-btn justify-center items-center ml-48 mr-14 ">
-                    <input class="w-72 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mr-20 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="lowest Bitcoin rate" id="btn-lowest-Bitcoin-rate">
+                <div class="convert-btn justify-center items-center md:ml-48 sm:2 md:mr-14 sm:mr-32 ">
+                    <input class="md:w-72 sm:w-56 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 md:mr-20 sm:mr-4 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="lowest Bitcoin rate" id="btn-lowest-Bitcoin-rate">
                 </div>
 
-                <div class="display-lowest-Bitcoin-rate text-black font-bold text-2xl  border rounded-md p-3 m-2 w-5/12 ml-96 bg-orange-600 hover:bg-red-600 hover:text-white ">
+                <div class="display-lowest-Bitcoin-rate text-black md:font-bold sm:font-medium md:text-2xl sm:text-sm  border rounded-md p-3 m-2 w-5/12 md:ml-96 sm:ml-44 bg-orange-600 hover:bg-red-600 hover:text-white ">
                 </div>
             </form>
         </div>
         <!-- highest Bitcoin rate -->
-        <div class="w-5/12 justify-center items-center text-center ml-96   pt-5  text-black font-medium border rounded-md bg-blue-300 bg-opacity-50 mt-5 p-2 hover:bg-red-600 hover:text-white">
+        <div class="w-5/12 justify-center items-center text-center md:ml-96 sm:ml-10   pt-5  text-black font-medium border rounded-md bg-blue-300 bg-opacity-50 mt-5 p-2 hover:bg-red-600 hover:text-white">
             <h3 class="transform transition-all hover:rotate-45">Highest Bitcoin rate </h3>
             <i class="fa-solid fa-arrow-down animate-ping"></i>
         </div>
-        <div class="container   mx-auto mt-10 p-10 ml-10  bg-slate-400 bg-opacity-30">
+        <div class="container mx-auto  md:mt-10 sm:mt-4 md:p-10 sm:p-6 md:ml-10 sm:ml-2  bg-slate-400 bg-opacity-30">
 
             <form action="" class="convert justify-center items-center text-center" id="highest-Bitcoin-rate-form">
-                <div class="flex justify-center items-center gap-96">
-                    <div class="  text-center ml-20 p-2 m-2">
-                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50 ">From
+                <div class="flex justify-center items-center gap-96 ">
+                    <div class="  text-center md:ml-20 sm:ml-10 p-2 md:m-2 sm:m-0">
+                        <p class="md:mr-20 sm:mr-4 pl-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50 ">From
                             <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
                         </p>
 
                     </div>
                     <div>
-                        <p class="mr-20 pt-2 pl-2 border rounded-md bg-orange-500 bg-opacity-50">To
+                        <p class="md:mr-20 sm:mr-4 pl-2 border rounded-md bg-orange-500 bg-opacity-50">To
                             <i class="fa-solid fa-arrow-trend-down pl-2 pr-1"></i>
                         </p>
 
                     </div>
                 </div>
                 <div class="flex justify-center items-center gap-40">
-                    <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="fromDate">
+                    <input class="md:ml-64 sm:ml-32  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="fromDate">
                     <input class="ml-64  rounded-md placeholder:text-fuchsia-800 " type="date" name="" id="toDate">
                 </div>
-                <div class="convert-btn justify-center items-center ml-48 mr-14 ">
-                    <input class="w-72 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600 mr-20 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="highest Bitcoin rate" id="btn-highest-Bitcoin-rate">
+                <div class="convert-btn justify-center items-center md:ml-48 sm:2 md:mr-14 sm:mr-32 ">
+                    <input class="md:w-72 sm:w-44 cursor-pointer text-orange-400 border rounded-full border-white justify-center bg-slate-600  md:mr-20 sm:mr-2 mt-5 p-2 hover:text-white text-lg hover:bg-red-600" type="submit" value="highest Bitcoin rate" id="btn-highest-Bitcoin-rate">
                 </div>
 
-                <div class="display-highest-Bitcoin-rate text-black font-bold text-2xl  border rounded-md p-3  m-2 w-5/12 ml-96 bg-orange-600 hover:bg-red-600 hover:text-white">
+                <div class="display-highest-Bitcoin-rate text-black md:font-bold sm:font-medium md:text-2xl sm:text-sm border rounded-md p-3  m-2 w-5/12 md:ml-96 sm:ml-44 bg-orange-600 hover:bg-red-600 hover:text-white">
                 </div>
             </form>
         </div>
